@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Study Planner</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>My Study Planner</h1>
+            <p>Plan your day. Achieve your goals.</p>
+        </header>
+
+        <section class="task-form">
+            <h2>Add New Study Task</h2>
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter your study task"
+            >
+
+            <select id="subjectInput">
+                <option value="">Select Subject</option>
+                <option value="C Programming">C Programming</option>
+                <option value="Mathematics">Mathematics</option>
+                <option value="Physics">Physics</option>
+                <option value="English">English</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <button id="addButton">Add Task</button>
+        </section>
+
+        <section class="statistics">
+            <div class="stat-card">
+                <h3 id="totalTasks">0</h3>
+                <p>Total Tasks</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="completedTasks">0</h3>
+                <p>Completed</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="progress">0%</h3>
+                <p>Progress</p>
+            </div>
+        </section>
+
+        <section class="task-section">
+            <h2>My Tasks</h2>
+            <ul id="taskList"></ul>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
